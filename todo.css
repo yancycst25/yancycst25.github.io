@@ -6,11 +6,22 @@
 	h2{ 
 	color: red;
 	}
+	h2#abc{
+		text-decoration: line-through;
+	}
 	h3{ 
 	color: green;
+	}
+	h3#123{
+		text-decoration: line-through;
+	}
 	h4{
 	color: blue;
 	}
+	h4#000{
+		text-decoration: line-through;
+	}
+	
 	
 
 	
