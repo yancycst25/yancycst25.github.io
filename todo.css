@@ -7,13 +7,13 @@
 	font-family:Lucida Calligraphy;
 	}
 	p2{ 
-	color: red;
+	color: green;
 	}
 	p2#abc{
 		text-decoration: line-through;
 	}
 	p3{ 
-	color: green;
+	color: blue;
 	}
 	p3#123{
 		text-decoration: line-through;
