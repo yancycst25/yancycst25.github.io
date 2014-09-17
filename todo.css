@@ -1,14 +1,34 @@
+<<<<<<< HEAD
 	<head> To do list </head>
 	<style.
 	h1{ 
 	color: red;
+=======
+
+	Title{ 
+	color: hotpink;
+	font-family:Lucida Calligraphy;
+>>>>>>> FETCH_HEAD
 	}
 	h2{ 
-	color: blue;
+	color: red;
+	}
+	h2#abc{
+		text-decoration: line-through;
 	}
 	h3{ 
 	color: green;
 	}
-	</style>
+	h3#123{
+		text-decoration: line-through;
+	}
+	h4{
+	color: blue;
+	}
+	h4#000{
+		text-decoration: line-through;
+	}
+	
+	
 
 	
