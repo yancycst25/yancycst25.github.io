@@ -1,27 +1,27 @@
 
-	h1{ 
+	p1{ 
 	color: red;
 	}
 	Title{ 
 	color: hotpink;
 	font-family:Lucida Calligraphy;
 	}
-	h2{ 
+	p2{ 
 	color: red;
 	}
-	h2#abc{
+	p2#abc{
 		text-decoration: line-through;
 	}
-	h3{ 
+	p3{ 
 	color: green;
 	}
-	h3#123{
+	p3#123{
 		text-decoration: line-through;
 	}
-	h4{
+	p4{
 	color: blue;
 	}
-	h4#000{
+	p4#000{
 		text-decoration: line-through;
 	}
 	
