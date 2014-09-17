@@ -1,27 +1,27 @@
 
-	th1{ 
+	td1{ 
 	color: red;
 	}
 	h1{ 
 	color: rgb(45,288,90);
 	font-family:Lucida Calligraphy;
 	}
-	th2{ 
+	td2{ 
 	color: green;
 	}
-	th2#abc{
+	td2#abc{
 		text-decoration: line-through;
 	}
-	th3{ 
+	td3{ 
 	color: blue;
 	}
-	th3#123{
+	td3#123{
 		text-decoration: line-through;
 	}
-	th4{
+	td4{
 	color: blue;
 	}
-	th4#000{
+	td4#000{
 		text-decoration: line-through;
 	}
 	
