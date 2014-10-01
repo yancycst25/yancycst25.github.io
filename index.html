@@ -20,10 +20,21 @@
   width:270px;
   height:240px;
   }
+  div#nav  {float: left; width:9em;
+  background:#FDD;}
+  
   div#nav ul{ margin:0; padding:0; width:9em;
   backgound: grey;, border: 1px; solid;}
-  div#nav {float:left; width:9em;
-  background:#FDD;}
+  
+  div#nav li{position:relative; url (submenu.gif) 95% 50% no-repeat;
+  }
+  div#nav li.submenu: hover {background-color: #EDD;}
+  div#nav a {display: block; padding: 0.25em 0 0.25em 0.5em;
+  		text-decoration: none; width: 6.5em;}
+  div#nav ul ul {position: absolute; top: 0; left: 7em;}
+  div#nav ul. level1 li.submenu: hover ul.level2,
+  div#nav ul. level2 li.submenu:hover ul.level3, {display: block;}
+  
 </style>
 </head>
 <header>Galápagos Islands</header>
