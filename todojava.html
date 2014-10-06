@@ -13,11 +13,12 @@
 	</ul>
 </main>
 <aside>
+<label> for"taskbox"> New Task </label>
 	<input type="text" id="newstask" value="New Task">
 	<button onclick="newtask();"> Add Task </button>
 </aside>
 <script type= "text/javascript">
-newTask= function() {
+AddTask= function() {
 	i = document.querySelector("#newtask").value
 	bl = document.querySelector("#busylist")
 	li = document.createElement("li")
