@@ -22,7 +22,7 @@
 			<input type="checkbox" name="tastk2" id="input" > Task 2<br />
 			<input type="checkbox" name="task3" id="input" > Task 3<br />
 			
-			<button onclick="myFunction()">Add Task</button>
+			<button id= "btn" onclick="myFunction()">Add Task</button>
 
 
 
@@ -30,11 +30,14 @@
 
    (function() {
       var input = document.getElementById('input');
-      var btn = document.getElementById('btn');
+      var input = document.getElementById('btn');
+      
       var lists = {
          todo: document.getElementById('todo'),
          
       };
+      
+      console.log(input, btn, lists )
 
       /**
        *
