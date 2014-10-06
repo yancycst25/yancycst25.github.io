@@ -30,11 +30,11 @@
 <aside>
 <script type= "text/javascript">
 newtask= function() {
-	i = document.querySelector("#newtask")
-	l = document.querySelector("#list")
+	i = document.querySelector("#newtask").value
+	bl = document.querySelector("#list")
 	li = document.createElement("li")
 	li.innerHTML = i.value
-	l.appendChild(li)
+	bl.appendChild(li)
 }
 </script>
                 
