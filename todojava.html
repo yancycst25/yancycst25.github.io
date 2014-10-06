@@ -10,16 +10,18 @@
 <aside>
 <input type="text" id="newstask" value="New Task">
 <button onclick="newtask();"> Add Task </button>
+</aside>
 <script type= "text/javascript">
-newtask= function() {
+newTask= function() {
 	i = document.querySelector("#newtask").value
-	l = document.querySelector("#list")
+	bl = document.querySelector("#list")
 	li = document.createElement("li")
+	cb= document.createElement("input")
+	cb.type = "checkbox"
+	t= document.createTextNode(i.value)
 	li.innerHTML = "<input type=\"checkbox>\">" + i.value
-	l.appendChild(li)
+	bl.appendChild(li)
 }
 </script>
-                
-
 </body>
 </html>
