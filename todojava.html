@@ -21,15 +21,15 @@
 			<input type="checkbox" name="task1" id="old"  > Task 1<br>
 			<input type="checkbox" name="tastk2" id="old" > Task 2<br>
 			<input type="checkbox" name="task3" id="old" > Task 3<br>
-			<input type="text"  size="40" id="input">
-			<button>Add Task</button>
+			<input type="botton" name="Add Task" Value="click" onClick="addInput">
+			
 	<p id="demo"></p>
 
 
 
 <script>
 
-newp = document.createElement("input");
+newinput =document.createElement("input");
                 newp.innerHTML = "add text";
                 document.body.appendChild(newinput);
 window.onload = function() { addInput(); showValues(); }
