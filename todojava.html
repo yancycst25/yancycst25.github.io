@@ -21,13 +21,20 @@
 			<input type="checkbox" name="task1" id="old"  > Task 1<br>
 			<input type="checkbox" name="tastk2" id="old" > Task 2<br>
 			<input type="checkbox" name="task3" id="old" > Task 3<br>
-			<input type="text" name="input" value="">
+			<input type="text" id="input" value="">
 			 <button onclick="addInput();">Add Task</button>
 <script>
-addTask = function() {
-newinput =document.createElement("input");
+addInput = function() {
+newInput =document.createElement("input");
                 newp.innerHTML = "add text";
                 document.body.appendChild(newinput);
+                 var b=document.getElementById('input').value;
+ var cell1 = row.insertCell(0);
+            var element1 = document.createElement("input");
+            element1.type = "text";
+            element1.name = "txtbox[]";
+            element1.value=b;
+                   cell1.appendChild(element1);
 }
 window.onload = function() { addInput(); showValues(); }
 </script>
