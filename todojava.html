@@ -18,9 +18,9 @@
 <body>
 
 			<h1> To Do List</h1>
-			<input type="checkbox" name="task1" id="input"  > Task 1<br>
-			<input type="checkbox" name="tastk2" id="input" > Task 2<br>
-			<input type="checkbox" name="task3" id="input" > Task 3<br>
+			<input type="checkbox" name="task1" id="old"  > Task 1<br>
+			<input type="checkbox" name="tastk2" id="old" > Task 2<br>
+			<input type="checkbox" name="task3" id="old" > Task 3<br>
 			<input type="text"  size="40" id="input">
 			<button id= "btn" >Add Task</button>
 	<p id="demo"></p>
@@ -29,17 +29,10 @@
 
 <script>
 
-addInput() {
-	
-   (function() {
-      var input = document.getElementById('input');
-      var btn = document.getElementById('btn');
-      var el = document.createElement('li');
-         var checkbox = document.createElement('input');
-      var lists = {
-         todo: document.getElementById('todo'),
-         
-      };
+newp = document.createElement("input");
+                newp.innerHTML = "add text";
+               
+                document.body.appendChild(newp);
 window.onload = function() { addInput(); showValues(); }
 </script>
 </body>
