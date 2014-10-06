@@ -26,15 +26,11 @@
 <script>
 addInput = function() {
 newInput =document.createElement("input");
-                newp.innerHTML = "add text";
+                newp.innerHTML = "input";
                 document.body.appendChild(newinput);
-                 var b=document.getElementById('input').value;
- var cell1 = row.insertCell(0);
-            var element1 = document.createElement("input");
-            element1.type = "text";
-            element1.name = "txtbox[]";
-            element1.value=b;
-                   cell1.appendChild(element1);
+                var node=document.createElement("P")
+                
+           
 }
 window.onload = function() { addInput(); showValues(); }
 </script>
