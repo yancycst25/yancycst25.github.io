@@ -13,7 +13,7 @@
 	</ul>
 </main>
 <aside>
-<label> for"taskbox"> New Task </label>
+
 	<input type="text" id="newstask" value="New Task">
 	<button onclick="newtask();"> Add Task </button>
 </aside>
@@ -26,9 +26,9 @@ newTask= function() {
 	cb.type = "checkbox"
 	t= document.createTextNode(i.value)
 	li.innerHTML = "<input type=checkbox>" + i.value
-	li.appendChild(li)
 	li.appendChild(cb)
-	bl.appendChild(t)
+	li.appendChild(t)
+	bl.appendChild(li)
 }
 </script>
 </body>
