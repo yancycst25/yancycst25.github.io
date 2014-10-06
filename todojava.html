@@ -23,16 +23,12 @@
 			<input type="checkbox" name="task3" id="old" > Task 3<br>
 			<input type="text" name="input" value="">
 			 <button onclick="addInput();">Add Task</button>
-			
-	<p id="demo"></p>
-
-
-
 <script>
-
+addTask = function() {
 newinput =document.createElement("input");
                 newp.innerHTML = "add text";
                 document.body.appendChild(newinput);
+}
 window.onload = function() { addInput(); showValues(); }
 </script>
 </body>
