@@ -70,19 +70,7 @@ addInput() {
          var str = input.value.trim();
 
          if (str.length > 0) {
-            addTask(makeTaskHtml(str, onCheck));
-
-            input.value = '';
-            input.focus();
-         }
-      };
-
-      btn.addEventListener('click', onInput);
-      input.addEventListener('keyup', function(event) {
-         var code = event.keyCode;
-
-         if (code === 13) {
-            onInput();
+            addInput(makeTaskHtml(str, onCheck));
          }
       });
 
