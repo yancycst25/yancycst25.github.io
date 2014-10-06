@@ -1,26 +1,33 @@
 <!doctype html>
 <html>
+<style>
+	li {
+		list-style:none;
+	}
+</style>
 <body>
 
-			<h1> To Do List</h1>
+	<h1> To Do List</h1>
 <main>
-<ul id= "list">
+<ul id= "busylist">
 	</ul>
 </main>
 <aside>
-<input type="text" id="newstask" value="New Task">
-<button onclick="newtask();"> Add Task </button>
+	<input type="text" id="newstask" value="New Task">
+	<button onclick="newtask();"> Add Task </button>
 </aside>
 <script type= "text/javascript">
 newTask= function() {
 	i = document.querySelector("#newtask").value
-	bl = document.querySelector("#list")
+	bl = document.querySelector("#busylist")
 	li = document.createElement("li")
 	cb= document.createElement("input")
 	cb.type = "checkbox"
 	t= document.createTextNode(i.value)
 	li.innerHTML = "<input type=\"checkbox>\">" + i.value
 	bl.appendChild(li)
+	bl.appendChild(cb)
+	bl.appendChild(t)
 }
 </script>
 </body>
