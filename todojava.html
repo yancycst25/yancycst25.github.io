@@ -15,7 +15,7 @@ newtask= function() {
 	i = document.querySelector("#newtask").value
 	l = document.querySelector("#list")
 	li = document.createElement("li")
-	li.innerHTML = i.value
+	li.innerHTML = "<input type=\"checkbox>\">" + i.value
 	l.appendChild(li)
 }
 </script>
