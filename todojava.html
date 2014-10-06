@@ -17,9 +17,9 @@
 <body>
 
 			<h1> To Do List</h1>
-			<input type="checkbox" name="task1" value="a"  > Task 1<br />
-			<input type="checkbox" name="tastk2" value="b" > Task 2<br />
-			<input type="checkbox" name="task3" value="c" > Task 3<br />
+			<input type="checkbox" name="task1" value="input"  > Task 1<br />
+			<input type="checkbox" name="tastk2" value="input" > Task 2<br />
+			<input type="checkbox" name="task3" value="input" > Task 3<br />
 			<button>Add Task</button>
 			<input type="text" size="20">
 			<button type="button" onclick="myFunction()">Add Task</button>
@@ -65,7 +65,7 @@
          var task = event.target.parentElement;
          var list = task.parentElement.id;
 
-         lists[list === 'done' ? 'todo' : 'done'].appendChild(task);
+         lists[list ===  'todo' appendChild(task);
          this.checked = false;
          input.focus();
       };
