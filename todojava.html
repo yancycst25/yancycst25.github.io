@@ -18,22 +18,26 @@
 <body>
 
 			<h1> To Do List</h1>
+			<main>
+			<ul id= "list"
+			</ul>
 			<input type="checkbox" name="task1" id="old"  > Task 1<br>
 			<input type="checkbox" name="tastk2" id="old" > Task 2<br>
 			<input type="checkbox" name="task3" id="old" > Task 3<br>
-			<input type="text" id="input" value="">
-			 <button onchange="newInput();">Add Task</button>
-			 <p id="demo"></p>
-<script>
-function=addInput{
-newInput =document.createElement("input");
-                newp.innerHTML = "input";
-                document.body.appendChild(newinput);
-               
-                
-           
+			<input type="text" id="input" value="New Task">
+			 <button onclick="newtask();">Add Task </button>
+			 </main>
+<aside>
+<script type= "text/javascript">
+newtask= funtion() {
+	i = document.querySelector("#newtask")
+	l = documentquerySelector(#"list")
+	li = document.createElement("li")
+	li.innerHTML = i.value
+	l.appendChild(li)
 }
-window.onload = function() { newInput(); showValues(); }
 </script>
+                
+</aside>
 </body>
 </html>
