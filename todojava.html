@@ -1,43 +1,21 @@
 <!doctype html>
 <html>
-<style>
-	h1 {
-		color:#99FFFF;
-		text-size: 32px;
-		font-style: italic;
-	}
-	body {
-          background-image: url("http://static.wallpedes.com/wallpaper/free/free-download-old-paper-wallpaper-full-size-wallpaper-old-paper-hd-free-download-music-bergerak-game-keren-full-size-old-paper-wallpaper-6.jpg")
-     
-	}
-	input {
-		color:back;
-	}
-	
-</style>
 <body>
 
 			<h1> To Do List</h1>
-			<main>
-			<ul id= "list">
-			</ul>
-			<input type="checkbox" name="task1" id="old"  > Task 1<br>
-			<input type="checkbox" name="tastk2" id="old" > Task 2<br>
-			<input type="checkbox" name="task3" id="old" > Task 3<br>
-			<input type="text" id="newstask" value="New Task">
-			 <button onclick="newtask();">Add Task </button>
-			 </main>
+		
 <aside>
+<button onclick="newtask();"> Add Task </button>
 <script type= "text/javascript">
 newtask= function() {
 	i = document.querySelector("#newtask").value
-	bl = document.querySelector("#list")
+	l = document.querySelector("#list")
 	li = document.createElement("li")
 	li.innerHTML = i.value
-	bl.appendChild(li)
+	l.appendChild(li)
 }
 </script>
                 
-</aside>
+
 </body>
 </html>
