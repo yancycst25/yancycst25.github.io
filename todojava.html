@@ -9,7 +9,7 @@
 
 	<h1> To Do List</h1>
 <main>
-<ul id="busylist">
+<ul id="busyList">
 	</ul>
 </main>
 <aside>
@@ -20,12 +20,12 @@
 <script type= "text/javascript">
 addTask= function() {
 	i = document.querySelector("#taskbox").value
-	bl = document.querySelector("#busylist")
+	bl = document.querySelector("#busyList")
 	li = document.createElement("li")
 	cb= document.createElement("input")
-
+	cb.type = "checkbox"
 	t= document.createTextNode(i.value)
-	
+	li.innerHTML = "<input type=checkbox>" + i.value
 	li.appendChild(cb)
 	li.appendChild(t)
 	bl.appendChild(li)
