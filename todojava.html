@@ -23,16 +23,16 @@
 </main>
 <aside>
 	
-	<select id="priority">
+	<label for="taskbox">Enter Task</label>
+	<input type="text" id="taskbox" size=40 value="">
+	<button onclick="addtask();"> Add Task </button>
+	select id="priority">
     	<option>High</option>
     	<option>Medium</option>
     	<option>low</option>
 	</select>
-
-	<label for="taskbox">Enter Task</label>
-	<input type="text" id="taskbox" size=40 value="">
-	<button onclick="addtask();"> Add Task </button>
 </aside>
+
 <script type= "text/javascript">
 addtask= function() {
 
