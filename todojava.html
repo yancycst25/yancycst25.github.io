@@ -39,17 +39,21 @@ addtask= function() {
 
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
-	pv= document.querySelector("#priority").value;
+	pV= document.querySelector("#priority").value;
 	li = document.createElement('li');
-	 
+	li.className= pV;
 	cb= document.createElement("input");
 	cb.type = 'checkbox';
+	li.appendChild(cb);
 	t= document.createTextNode(i.value);
-
-	li.appendChild(pv)
-	li.appendChild(cb)
-	li.appendChild(t)
-	bl.appendChild(li)
+	li.appendChild(t);
+	newcb.id = taskCount;
+	bl.appendChild(li);
+	task.value = "";
+	cb.onclick = doneTask;
+	
+	
+	
 
 	
 }
