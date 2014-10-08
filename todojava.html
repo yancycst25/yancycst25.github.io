@@ -6,7 +6,7 @@
 	}
 	h1 {
 		color:#99FFFF;
-		text-size: 32px;
+		text-size: 50px;
 		font-style: italic;
 	}
 	body {
@@ -26,6 +26,7 @@
 	<label for="taskbox">Enter Task</label>
 	<input type="text" id="taskbox" size=40 value="">
 	<button onclick="addtask();"> Add Task </button>
+	
 	<select id="priority">
     	<option>High</option>
     	<option>Medium</option>
@@ -36,18 +37,20 @@
 <script type= "text/javascript">
 addtask= function() {
 
-	i = document.querySelector("#taskbox")
-	bl = document.querySelector("#busylist") 
-	li = document.createElement("li")
-	cb= document.createElement("input")
-	cb.type = "checkbox"
-	t= document.createTextNode(i.value)
-	l= document.querySelector("#priority")
-	
+	i = document.querySelector("#taskbox");
+	bl = document.querySelector("#busylist");
+	pv= document.querySelector("#priority").value;
+	li = document.createElement('li');
+	 
+	cb= document.createElement("input");
+	cb.type = 'checkbox';
+	t= document.createTextNode(i.value);
+
+	li.appendChild(pv)
 	li.appendChild(cb)
 	li.appendChild(t)
 	bl.appendChild(li)
-	l.appendChild(l)
+
 	
 }
 </script>
