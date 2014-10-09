@@ -16,9 +16,7 @@
 	li.done {
 		text-decoration: line-through;
 	}
-	high:hover{
-		background-color:red;
-	}
+	
 	
 </style>
 <body>
@@ -52,7 +50,8 @@ addtask= function() {
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
-	important = documeny.querySelector("#high")
+	important = documeny.querySelector("#high");
+	document.body.important.backgroundColor = "lightblue";
 	li = document.createElement('li');
 	li.className = priorityValue;
 	cb= document.createElement("input");
