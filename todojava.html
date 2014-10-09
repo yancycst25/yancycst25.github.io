@@ -50,13 +50,13 @@ addtask= function() {
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
-	important = documeny.querySelector("#high");
+	im = documeny.querySelector("#high").value;
 	li = document.createElement('li');
 	li.className = priorityValue;
 	cb= document.createElement("input");
 	cb.type = 'checkbox';
 	li.appendChild(cb);
-	important.appendChild(important).backgroundColor="red";
+	im.appendChild.backgroundColor="red";
 	t= document.createTextNode(i.value);
 	li.appendChild(t);
 	bl.appendChild(li);
