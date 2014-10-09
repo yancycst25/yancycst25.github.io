@@ -16,9 +16,7 @@
 	li.done {
 		text-decoration: line-through;
 	}
-	select.high {
-		background-color: "red";
-	}
+
 	
 </style>
 <body>
@@ -52,6 +50,7 @@ addtask= function() {
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
+	document.select.high.style.backgroundColor = "red";
 	li = document.createElement('li');
 	li.className = priorityValue;
 	cb= document.createElement("input");
