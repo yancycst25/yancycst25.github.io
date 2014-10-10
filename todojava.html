@@ -15,14 +15,15 @@
 	}
 	li.done {
 		text-decoration: line-through;
-	}
+	
 	.high {
 		text-color:red;
-	}
+	
 	.medium { 
 		text-color:blue;
-	}
+	
 	.low {
+		text-size:15px;
 		text-color:yellow;
 	}
 	
@@ -59,7 +60,7 @@ addtask= function() {
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
 	li = document.createElement('li');
-
+	li.className = priorityValue;
 	cb= document.createElement("input");
 	cb.type = 'checkbox';
 	li.appendChild(cb);
