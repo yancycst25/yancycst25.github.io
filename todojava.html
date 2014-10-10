@@ -58,12 +58,13 @@ addtask= function() {
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
-	li.className: priority;
+
 	li = document.createElement('li');
 	li.className = priorityValue;
 	cb= document.createElement("input");
 	cb.type = 'checkbox';
 	li.appendChild(cb);
+	li.className: priority;
 	t= document.createTextNode(i.value);
 	li.appendChild(t);
 	bl.appendChild(li);
