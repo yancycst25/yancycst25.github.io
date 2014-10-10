@@ -51,7 +51,13 @@
 <script type= "text/javascript">
 
 doneTask = function() {
+	if (this.checked){
 	this.parentNode.className = "done"
+	}
+		else {
+			this.parentNode.className = ""
+		}
+	}
 }
 
 addtask= function() {
