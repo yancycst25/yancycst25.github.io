@@ -60,7 +60,7 @@ localSave = function() {
 	res = []
 	var i;
 	allEntries = document.querySelectorAll('li')
-	for(i=0); i < allEntries.length; i++) {
+	for(i=0; i < allEntries.length; i++) {
 		if (allEntries[i].className != "done") {
 		res.push(allEntries[i].innerText);
 		}
