@@ -18,7 +18,6 @@
 	}
 	.high {
 		text-color:red;
-		text-size: 40px;
 	}
 	.medium {
 		text-color:blue;
@@ -52,13 +51,27 @@
 
 doneTask = function() {
 	if (this.checked){
-	this.parentNode.className = "done"
+	this.parentNode.classList.add = ("done");
 	}else {
-			this.parentNode.className = ""
+		this.parentNode.classList.remove ("done");
 		}
-	
+	localSave()
+}
+localSave = function() {
+	res = []
+	var i;
+	allEntries = document.querySelectorAll('li')
+	for(i=0); i < allEntries.length; i++) {
+		if (allEntries[i].className != "done") {
+		res.push(allEntries[i].innerText);
+		}
+	}
+	console.log(res)
+	localStorage.setItem( "todoDatabase",JSON.stringify(res))
 }
 
+
+}
 addtask= function() {
 
 	i = document.querySelector("#taskbox");
