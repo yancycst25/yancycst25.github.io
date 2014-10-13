@@ -65,7 +65,7 @@ localSave = function() {
 		res.push(allEntries[i].innerText);
 		}
 	}
-	console.log(res)
+
 	localStorage.setItem("todoDatabase", JSON.stringify(res))
 }
 restoreList = function () {
