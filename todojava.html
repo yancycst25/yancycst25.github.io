@@ -72,7 +72,7 @@ restoreList = function () {
 	allEntries = JSON.parse (localStorage.getItem("todoDatabase"));
 	for (i=0; i< allEntries.length; i++){
 		if (allEntries[i].classList !="done") {
-		res.push(allEntries[i].innterText);
+		res.push(allEntries[i].innerText);
 		}
 		
 	}
