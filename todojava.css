@@ -22,6 +22,7 @@ li {
 	color: #FFF;
 	text-align: center;
 	text-decoration: none
+	alert(.high)
 	}
 	.medium {
 		text-color:blue;
