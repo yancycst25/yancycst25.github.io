@@ -1,0 +1,25 @@
+li {
+		list-style:none;
+	}
+	h1 {
+		color:#99FFFF;
+		text-size: 50px;
+		font-style: italic;
+	}
+	body {
+          background-image: url("http://static.wallpedes.com/wallpaper/free/free-download-old-paper-wallpaper-full-size-wallpaper-old-paper-hd-free-download-music-bergerak-game-keren-full-size-old-paper-wallpaper-6.jpg")
+     
+	}
+	li.done {
+		text-decoration: line-through;
+	}
+	.high {
+		text-color:red;
+	}
+	.medium {
+		text-color:blue;
+	}
+	.low {
+		text-color:yellow;
+	}
+	
