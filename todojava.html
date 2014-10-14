@@ -49,8 +49,18 @@ localSave = function() {
 restoreEntries = function () {
 	allEntries = JSON.parse(localStorage.getItem('todoDatabase'))
 	for (i=0; i < allEntries.length; i++){
-	document.getElementById(i).value = localSafe["done"];
+	
+	bl = document.querySelector("#busylist");
+	li = document.createElement('li');
+	cb= document.createElement("input");
+	cb.type = 'checkbox';
+	cb.onclick = doneTask;	
+	li.appendChild(cb);
+	t= document.createTextNode(allEntries[i]);
+	li.appendChild(t);
+	bl.appendChild(li);
 	}
+	
 }
 
 addTask= function() {
@@ -66,9 +76,9 @@ addTask= function() {
 	cb.onclick = doneTask;	
 	li.appendChild(cb);
 	t= document.createTextNode(iText);
-
 	li.appendChild(t);
 	bl.appendChild(li);
+	
 	i.value = "";
 localSave ()
 	
