@@ -14,23 +14,12 @@ li {
 		text-decoration: line-through;
 	}
 	.High {
-		display: block;
-	margin: 0 1px 0 0;
-	padding: 4px 10px;
-	width: 60px;
-	background: #FF3333;
-	color: #FFF;
-	text-align: center;
-	text-decoration: none
-	alert(.high)
+		color:red;
 	}
 	.Medium {
-		text-color:blue;
-		text-size: 15px;
+		color:blue;
 	}
 	.Low{
-		display:;
-		text-color:yellow;
-		text-size: 15px;
+		color:yellow;
 	}
 	
