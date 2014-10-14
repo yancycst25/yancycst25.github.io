@@ -3,7 +3,7 @@ li {
 	}
 	h1 {
 		color:#99FFFF;
-		text-size: 50px;
+		text-size: 70px;
 		font-style: italic;
 	}
 	body {
@@ -15,11 +15,14 @@ li {
 	}
 	li.high {
 		text-color:red;
+		text-size:15px;
 	}
 	li.medium {
 		text-color:blue;
+		text-size: 15px;
 	}
 	li.low {
 		text-color:yellow;
+		text-size: 15px;
 	}
 	
