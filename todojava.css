@@ -13,7 +13,7 @@ li {
 	li.done {
 		text-decoration: line-through;
 	}
-	.high {
+	.High {
 		display: block;
 	margin: 0 1px 0 0;
 	padding: 4px 10px;
@@ -24,11 +24,11 @@ li {
 	text-decoration: none
 	alert(.high)
 	}
-	.medium {
+	.Medium {
 		text-color:blue;
 		text-size: 15px;
 	}
-	.low{
+	.Low{
 		display:;
 		text-color:yellow;
 		text-size: 15px;
