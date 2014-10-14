@@ -39,7 +39,7 @@ localSave = function() {
 	var i;
 	allEntries = document.querySelectorAll('li')
 	for(i=0; i < allEntries.length; i++) {
-		if (allEntries[i].className != "done") {
+		if (allEntries[i].classList != "done") {
 		res.push(allEntries[i].innerText);
 		}
 	}
@@ -47,8 +47,8 @@ localSave = function() {
 	localStorage.setItem("todoDatabase", JSON.stringify(res))
 }
 restoreList = function () {
-	allEntries = JSON.parse (localStorage.getItem("li"));
-	for (i=0; i< allEntries.length; i++){
+	allEntries = JSON.parse (localStorage.getItem("todoDatabase"));
+	for (i=0; i < allEntries.length; i++){
 		if (allEntries[i].classList !="done") {
 		res.push(allEntries[i].innerText);
 		}
