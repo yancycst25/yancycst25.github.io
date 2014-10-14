@@ -46,7 +46,7 @@ localSave = function() {
 
 	localStorage.setItem("todoDatabase",JSON.stringify(res))
 }
-restoreEntries = function () {
+restoreTask = function () {
 	allEntries = JSON.parse(localStorage.getItem('todoDatabase'))
 	for (i=0; i < allEntries.length; i++){
 	
