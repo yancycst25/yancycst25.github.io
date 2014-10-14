@@ -56,22 +56,24 @@ restoreList = function () {
 	}
 }
 
-addtask= function() {
-
+addTask= function() {
+	var newli;
 	i = document.querySelector("#taskbox");
 	bl = document.querySelector("#busylist");
 	priorityValue= document.querySelector("#priority").value;
+	iText = task.value;
 	li = document.createElement('li');
 	li.className = priorityValue;
 	cb= document.createElement("input");
 	cb.type = 'checkbox';
+	cb.onclick = doneTask;	
 	li.appendChild(cb);
-	t= document.createTextNode(i.value);
-	li.className= priority;
+	t= document.createTextNode(i.Text);
+
 	li.appendChild(t);
 	bl.appendChild(li);
 	i.value = "";
-	cb.onclick = doneTask;
+localSave ()
 	
 
 }
