@@ -13,13 +13,13 @@ li {
 	li.done {
 		text-decoration: line-through;
 	}
-	.high {
+	li.high {
 		text-color:red;
 	}
-	.medium {
+	li.medium {
 		text-color:blue;
 	}
-	.low {
+	li.low {
 		text-color:yellow;
 	}
 	
