@@ -35,16 +35,16 @@ doneTask = function() {
 	localSave()
 }
 localSave = function() {
-	res = []
+	var res = []
 	var i;
 	allEntries = document.querySelectorAll('li')
 	for(i=0; i < allEntries.length; i++) {
-		if (allEntries[i].classList != "done") {
+		if (! allEntries[i].classList.contains = ("done")) {
 		res.push(allEntries[i].innerText);
 		}
 	}
 
-	localStorage.setItem("todoDatabase", JSON.stringify(res))
+	localStorage.setItem("todoDatabase",JSON.stringify(res))
 }
 restoreList = function () {
 	allEntries = JSON.parse (localStorage.getItem("todoDatabase"));
