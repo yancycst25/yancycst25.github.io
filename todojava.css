@@ -8,13 +8,13 @@ li {
 	li.done {
 		text-decoration: line-through;
 	}
-	.High {
+	.high {
 		color:purple;
 	}
-	.Medium {
+	.med {
 		color:blue;
 	}
-	.Low{
+	.low{
 		color:white;
 	}
 
