@@ -1,6 +1,6 @@
 <html>
 <header>
-	<h1> To Do List</h1>
+	<h1> To Do List!!!!!</h1>
 	<link rel="stylesheet" href="todojava.css" type="css">
 </header>
 
@@ -36,19 +36,19 @@ done = function() {
 }
 localSave = function() {
 	var res = []
-	var i;
-	allEntries = document.querySelectorAll('li')
-	for(i=0; i < allEntries.length; i++) {
-		if (! allEntries[i].classList.contains("done")) {
-		res.push(allEntries[i].innerText);
+	var text;
+	entries = document.querySelectorAll('li')
+	for(text=0; text < entries.length; text++) {
+		if (! entries[text].classList.contains("done")) {
+		res.push(entries[text].innerText);
 		}
 	}
 
 	localStorage.setItem("todoDatabase",JSON.stringify(res))
 }
 restore = function () {
-	allEntries = JSON.parse(localStorage.getItem('todoDatabase'))
-	for (i=0; i < allEntries.length; i++){
+	entries = JSON.parse(localStorage.getItem('todoDatabase'))
+	for (text=0; text < entries.length; text++){
 	
 	ul = document.querySelector("#box");
 	li = document.createElement('li');
@@ -56,7 +56,7 @@ restore = function () {
 	input.type = 'checkbox';
 	input.onclick = done;	
 	li.appendChild(input);
-	t= document.createTextNode(allEntries[i]);
+	t= document.createTextNode(entries[text]);
 	li.appendChild(t);
 	ul.appendChild(li);
 	}
@@ -65,10 +65,10 @@ restore = function () {
 
 add= function() {
 	var newli;
-	i = document.querySelector("#textbox");
+	text = document.querySelector("#textbox");
 	ul = document.querySelector("#box");
 	priorityValue= document.querySelector("#level").value;
-	iText = i.value;
+	iText = text.value;
 	li = document.createElement('li');
 	li.className = priorityValue;
 	input= document.createElement("input");
@@ -79,7 +79,7 @@ add= function() {
 	li.appendChild(t);
 	ul.appendChild(li);
 	
-	i.value = "";
+	text.value = "";
 localSave ()
 	
 
