@@ -2,24 +2,25 @@ li {
 		list-style:none;
 	}
 	h1 {
-		color:#99FFFF;
-		text-size: 70px;
-		font-style: italic;
+		text-align:center;
 	}
 
 	li.done {
 		text-decoration: line-through;
 	}
 	.High {
-		color:red;
+		color:purple;
 	}
 	.Medium {
 		color:blue;
 	}
 	.Low{
-		color:yellow;
+		color:white;
 	}
-	
+
+body {
+  background-color: pink;
+}	
 section.A {
   background-color: plum;
   width: 85%;
