@@ -56,8 +56,8 @@ restore = function () {
 	input.type = 'checkbox';
 	input.onclick = done;	
 	li.appendChild(input);
-	t= document.createTextNode(entries[text]);
-	li.appendChild(t);
+	task= document.createTextNode(entries[text]);
+	li.appendChild(task);
 	ul.appendChild(li);
 	}
 	
@@ -67,16 +67,16 @@ add= function() {
 	var newli;
 	text = document.querySelector("#textbox");
 	ul = document.querySelector("#box");
-	priorityValue= document.querySelector("#level").value;
-	iText = text.value;
+	level= document.querySelector("#level").value;
+	word = text.value;
 	li = document.createElement('li');
-	li.className = priorityValue;
+	li.className = level;
 	input= document.createElement("input");
 	input.type = 'checkbox';
 	input.onclick = done;	
 	li.appendChild(input);
-	t= document.createTextNode(iText);
-	li.appendChild(t);
+	task= document.createTextNode(word);
+	li.appendChild(task);
 	ul.appendChild(li);
 	
 	
